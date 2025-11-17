@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nettoyage de moquette ? l'injecteur-extracteur | H?tel</title>
+    <meta name="description" content="Agent d'entretien nettoyant la moquette d'un h?tel avec un injecteur-extracteur. D?monstration visuelle, explications et bonnes pratiques de nettoyage professionnel." />
+    <meta name="theme-color" content="#0a5cff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">??</div>
+          <span class="brand-name">ProMoquette H?tel</span>
+        </div>
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="#scene">Sc?ne</a>
+          <a href="#processus">Processus</a>
+          <a href="#conseils">Conseils</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero container">
+        <h1>Agent d'entretien nettoyant la moquette d'un h?tel</h1>
+        <p class="lede">
+          D?monstration d'un nettoyage professionnel <strong>? l'injecteur?extracteur</strong> pour
+          une moquette propre, saine et durable.
+        </p>
+        <a class="cta" href="#scene">Voir la d?monstration</a>
+      </section>
+
+      <section id="scene" class="scene container" aria-labelledby="scene-titre">
+        <h2 id="scene-titre">D?monstration visuelle</h2>
+        <figure class="figure">
+          <figcaption class="visually-hidden">
+            Agent d'entretien masculin dans un couloir d'h?tel, utilisant un injecteur?extracteur
+            pour nettoyer une moquette. La buse avance en passes parall?les, le r?servoir d'eau
+            propre est bleu, celui d'eau us?e est gris. Des motifs de moquette apparaissent plus
+            nets apr?s le passage.
+          </figcaption>
+
+          <!-- Inline SVG illustration -->
+          <div class="svg-wrapper" role="img" aria-label="Nettoyage de moquette ? l'injecteur?extracteur dans un h?tel">
+            <svg class="scene-svg" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#f6f7fb" />
+                  <stop offset="100%" stop-color="#e9ecf7" />
+                </linearGradient>
+                <linearGradient id="carpetGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#ba3b6b" />
+                  <stop offset="100%" stop-color="#8d2b50" />
+                </linearGradient>
+                <pattern id="carpetPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <rect width="40" height="40" fill="url(#carpetGrad)" />
+                  <circle cx="10" cy="10" r="2" fill="#ffc9da" opacity="0.35" />
+                  <circle cx="30" cy="20" r="2" fill="#ffc9da" opacity="0.35" />
+                  <circle cx="20" cy="30" r="2" fill="#ffc9da" opacity="0.35" />
+                </pattern>
+                <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.2" />
+                </filter>
+              </defs>
+
+              <!-- Hotel corridor background -->
+              <rect x="0" y="0" width="1200" height="420" fill="url(#wallGrad)" />
+              <rect x="0" y="420" width="1200" height="280" fill="url(#carpetPattern)" />
+
+              <!-- Wall details: doors and lights -->
+              <g opacity="0.9">
+                <!-- Doors -->
+                <g fill="#d8def0" stroke="#b3c0e0" stroke-width="2">
+                  <rect x="120" y="120" width="120" height="230" rx="6" />
+                  <rect x="420" y="120" width="120" height="230" rx="6" />
+                  <rect x="720" y="120" width="120" height="230" rx="6" />
+                  <rect x="1020" y="120" width="120" height="230" rx="6" />
+                </g>
+                <!-- Wall lamps -->
+                <g class="lamp-glow">
+                  <g>
+                    <circle cx="180" cy="90" r="6" fill="#ffd66b" />
+                    <circle cx="180" cy="90" r="28" fill="#ffd66b" opacity="0.15" />
+                  </g>
+                  <g>
+                    <circle cx="540" cy="90" r="6" fill="#ffd66b" />
+                    <circle cx="540" cy="90" r="28" fill="#ffd66b" opacity="0.15" />
+                  </g>
+                  <g>
+                    <circle cx="900" cy="90" r="6" fill="#ffd66b" />
+                    <circle cx="900" cy="90" r="28" fill="#ffd66b" opacity="0.15" />
+                  </g>
+                </g>
+              </g>
+
+              <!-- Clean path on carpet (to show before/after) -->
+              <rect x="200" y="420" width="800" height="260" fill="#b94a73" opacity="0.25" />
+              <rect id="cleanTrack" x="200" y="420" width="0" height="260" fill="#ffffff" opacity="0.18" />
+
+              <!-- Technician (male) -->
+              <g id="technician" filter="url(#softShadow)">
+                <!-- legs -->
+                <rect x="560" y="465" width="18" height="85" fill="#2b2d42" rx="3" />
+                <rect x="590" y="465" width="18" height="95" fill="#2b2d42" rx="3" />
+                <ellipse cx="568" cy="555" rx="22" ry="8" fill="#1b1d2e" />
+                <ellipse cx="598" cy="565" rx="22" ry="8" fill="#1b1d2e" />
+                <!-- torso -->
+                <rect x="545" y="400" width="80" height="80" rx="12" fill="#0a5cff" />
+                <!-- head -->
+                <circle cx="585" cy="375" r="22" fill="#f0c7a4" />
+                <!-- arm to wand -->
+                <rect id="arm" x="610" y="420" width="70" height="14" rx="7" fill="#0a5cff" transform="rotate(-12 610 427)" />
+              </g>
+
+              <!-- Injector-extractor machine -->
+              <g id="machine" filter="url(#softShadow)">
+                <!-- body -->
+                <rect x="740" y="520" width="120" height="70" rx="10" fill="#5b6b87" />
+                <rect x="760" y="500" width="80" height="50" rx="8" fill="#8aa9ff" />
+                <rect x="840" y="500" width="20" height="50" rx="6" fill="#c9d4ee" />
+                <!-- wheels -->
+                <circle cx="770" cy="595" r="14" fill="#1b1d2e" />
+                <circle cx="830" cy="595" r="14" fill="#1b1d2e" />
+                <circle cx="770" cy="595" r="6" fill="#8aa9ff" />
+                <circle cx="830" cy="595" r="6" fill="#8aa9ff" />
+                <!-- hose -->
+                <path id="hose" d="M 770 520 C 720 520 680 520 650 510 C 625 502 616 485 610 470" fill="none" stroke="#38445b" stroke-width="8" stroke-linecap="round" />
+              </g>
+
+              <!-- Wand / nozzle on carpet -->
+              <g id="wand" filter="url(#softShadow)">
+                <rect x="630" y="500" width="140" height="10" rx="5" fill="#9fb3d9" />
+                <polygon id="nozzle" points="760,500 800,500 800,520 770,520" fill="#c9d4ee" />
+                <!-- extraction trail -->
+                <rect id="trail" x="760" y="520" width="0" height="14" fill="#e7f1ff" opacity="0.55" />
+              </g>
+
+              <!-- Small foam bubbles near nozzle -->
+              <g id="foam" opacity="0.0">
+                <circle cx="785" cy="505" r="4" fill="#ffffff" />
+                <circle cx="792" cy="512" r="3" fill="#ffffff" />
+                <circle cx="774" cy="510" r="2" fill="#ffffff" />
+              </g>
+            </svg>
+          </div>
+        </figure>
+
+        <div class="legend">
+          <div class="badge">Injecteur?Extracteur</div>
+          <ul class="legend-list" aria-label="L?gende de la sc?ne">
+            <li><span class="dot dot-blue"></span> R?servoir d'eau propre</li>
+            <li><span class="dot dot-gray"></span> R?servoir d'eau us?e</li>
+            <li><span class="dot dot-white"></span> Zone nettoy?e</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="processus" class="container steps" aria-labelledby="steps-titre">
+        <h2 id="steps-titre">Processus professionnel en 4 ?tapes</h2>
+        <ol class="step-list">
+          <li>
+            <h3>Pr?paration</h3>
+            <p>Aspiration minutieuse et rep?rage des taches tenaces.</p>
+          </li>
+          <li>
+            <h3>Injection</h3>
+            <p>Application d'une solution nettoyante adapt?e aux fibres de la moquette.</p>
+          </li>
+          <li>
+            <h3>Extraction</h3>
+            <p>R?cup?ration des salissures et de l'humidit? avec l'injecteur?extracteur.</p>
+          </li>
+          <li>
+            <h3>S?chage</h3>
+            <p>A?ration et contr?le qualit? pour un rendu uniforme.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="conseils" class="container tips" aria-labelledby="tips-titre">
+        <h2 id="tips-titre">Conseils de bonnes pratiques</h2>
+        <ul>
+          <li>Travailler en passes parall?les et r?guli?res.</li>
+          <li>Ne pas sur?mouiller pour limiter le temps de s?chage.</li>
+          <li>Utiliser un d?tergent compatible avec la fibre de la moquette.</li>
+          <li>Entretenir l'appareil (filtres, joints, buses) apr?s chaque usage.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>? <span id="year"></span> ProMoquette H?tel ? D?monstration ?ducative.</p>
+      </div>
+    </footer>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>
